@@ -1,0 +1,86 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){body{max-width:768px !important;width:100% !important}}@media screen and (min-device-width : 320px) and (max-device-width: 480px){body{max-width:480px !important;width:100% !important}}@media all and (min-device-width: 320px) and (max-device-width : 800px){#main-nav{display:none}#features{width:100% !important}#features
+div{margin-bottom:10px !important;float:none !important}#features
+#grow{padding-bottom:20px}#better-experiences{width:100%;padding-top:150px !important}#better-experiences
+.left{width:100% !important;margin-left:0 !important}#hero
+.left{width:100% !important}#hero .left
+a{display:block}#hero .left
+h2{width:100% !important}.wrapper{overflow-x:hidden;padding:10px;width:auto}body{overflow-x:hidden !important;font-family:Verdana !important}.center{width:100%}.main-container{padding:0
+!important;width:100% !important}.wide{width:100% !important;padding:0
+!important}.main-content{margin:0
+!important;float:none !important;width:100% !important}.faq
+dt{font-size:20px}p
+q{width:100% !important;margin:0
+!important;padding:0
+!important}.secondary-content{float:none !important}.article-item
+.contents{margin:0
+!important;width:100% !important}#browse{width:100% !important;margin:0
+0 25px 0 !important;padding:0
+!important}#browseState{width:100% !important;margin:0
+0 25px 0 !important;padding:0
+!important}.fb_iframe_widget{display:none !important;width:100% !important;height:auto !important}.online-gmat-prep h2,.course-content
+h2{width:100% !important;min-width:5px !important;font-family:Verdana !important}.three-column-module li,.four-column-module
+li{width:100%;float:none;padding:0
+!important}.infographic p a
+img{width:100% !important;min-width:5px !important}#readiness-nav{height:auto;display:none}#readiness-nav
+.center{height:auto}#readiness-nav
+h3{width:auto}.page-about{padding:0;width:100%}.floatdiv.right{margin:0;width:100%}.video-with-quote{display:none}.page-press{margin:0;padding:0;width:100%}.hero-module-video
+img{max-width:320px;width:auto !important}#readiness-content
+h3{margin:0;font-family:Verdana !important}#readiness-content
+.section{width:100%;margin:0}#readiness-content
+.section.professor{margin:0
+!important}#readiness-content
+.section.first{position:static}#readiness-content .section
+img{width:100% !important;height:auto !important;margin-bottom:15px}#readiness-content #jen,#readiness-content #professor-smith{display:none}.in-the-news{float:none !important;border:0
+!important;margin-left:0 !important;margin-right:0 !important;position:static !important;width:100%;padding:10px
+0}.hero
+iframe{width:100% !important;height:auto !important}.hero
+img{width:100%;height:auto}#partners{margin:0
+!important}#buzz{width:100%;margin:0;padding:0}#buzz ul
+li{display:block;float:none;margin:0}.footer{width:100%;padding:20px
+0}.footer .footer-inner{padding:0
+10px 0 10px}.footer #share-widgets
+.label{display:block;position:static}.footer #legality
+span{margin:0}.footer #footer-links>div{float:none;margin:0;padding:0}.footer>div{width:100%}#what-knewton-can{width:100%;padding:10px
+0}#buckets{clear:both;width:100%;margin:0;padding-top:15px}#buckets ul
+li{display:block;float:none;margin:0
+0 10px 0;border:0;padding:0}#slider{width:100%;border:0
+!important}#slider
+.contentdiv{width:100%;padding:0
+!important;margin:0
+!important;min-height:10px !important}#slider .img,#slider .img
+img{width:100%;max-width:520px;height:auto;display:block;margin:0
+!important;padding:0
+!important;position:static;font-family:Verdana !important}#slider #paginate-slider{position:static}#slider #paginate-slider
+a{display:none}#slider
+h1{font-size:20px !important;width:100% !important;line-height:auto !important;margin:10px
+!important;padding:0
+!important;display:block;font-family:Verdana !important}#dropdown-nav{display:block}#dropdown-nav
+select{margin-top:40px;margin-left:10px}.page-heading
+h1{font-size:25px !important;line-height:auto !important;margin:0
+!important;padding:0
+!important;font-family:Verdana !important}.signupform .fsForm .fsLabel,.signupform .fsForm .fsOptionLabel,.signupform .fsForm .fsMatrix th,.fsForm
+.fsMatrixLabel{font-family:Verdana !important}#slider h1,#buckets h2,#what-knewton-can .label+h2,#legality a,.button,.fsSubmitButton,.page-heading h1,.our-executive-team h4 strong,.four-column-module h2,.three-column-module h2,.prom h2,.online-gmat-prep h3,.course-content h3,.plans-and-pricing h2,.plans-and-pricing .btn,.signupform
+h2{font-family:Verdana !important}.page-heading h2,.press-single h2,.hero-module-video h2,.online-gmat-prep h2,.course-content h2,.contactform
+h2{font-family:Verdana !important}#navigation,#buckets label,#footer-links,.label,.in-the-news>p a,#slider p a,.floatdiv h3,h3.caption-header,.title,.our-executive-team h4,.our-investors li h4,.page-press .floatdiv strong,.contactform h3,#signupForm
+.lightBoxTitle{font-family:Verdana !important}#share{display:none}.page-title
+h1{font-size:25px !important;line-height:auto !important;margin:0
+!important;padding:0
+!important;font-family:Verdana !important}#navigation{display:none}.sometimes-fixed{display:none !important}#slider #paginate-slider li+li{margin-left:6px}#slider #paginate-slider
+ul{margin:0}.portrait+div{padding-left:30px}#buckets
+h2{margin-bottom:30px}#buzz,#what-knewton-can{padding-top:10px;clear:both;padding-bottom:25px}#wrap
+#content{width:100% !important}#wrap #content .post .post-top
+h2{width:100% !important}#wrap #content .post .post-top
+.image{margin-bottom:15px}#wrap #content .post
+.bottomcontainerBox{display:none !important}#wrap #content .post .post-content
+.excerpt{width:100% !important;padding-top:15px}#wrap #content .post .post-content .editor-content .attachment-post-header{width:100% !important}#wrap #content .post .post-content .editor-content
+img{width:100% !important;height:auto !important;float:none !important;margin:10px
+0 10px 0 !important}#wrap #content .post .post-content .post-bottom .author-info
+.bio{width:100% !important}#wrap #content .post .post-content .post-bottom .author-info
+.author_bigpic{margin-bottom:15px}#wrap #content .post #dsq-global-toolbar{display:none !important}#wrap #content .post ul,#wrap #content .post ul
+li{list-style-type:none !important}#wrap
+#sidebar{display:none !important}}.wp-pagenavi{clear:both}.wp-pagenavi a, .wp-pagenavi
+span{text-decoration:none;border:1px
+solid #BFBFBF;padding:3px
+5px;margin:2px}.wp-pagenavi a:hover, .wp-pagenavi
+span.current{border-color:#000}.wp-pagenavi
+span.current{font-weight:bold}

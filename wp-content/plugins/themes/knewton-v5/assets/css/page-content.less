@@ -1,0 +1,102 @@
+.page-content p,
+.page-content figcaption {
+	font-size: 16px;
+}
+
+.page-content h2,
+.page-content h3 {
+	.gamma();
+	padding-top: @spacer;
+}
+
+.page-content h3 {
+	.zeta;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.page-content h1 {
+	font-weight: 300;
+	.beta;
+	padding-top: @spacer;
+}
+
+.page-content h1:first-child {
+	padding: 0
+}
+
+.page-content img {
+	max-width: 100%;
+	width: auto !important;
+	height: auto !important
+}
+
+.page-content strong {
+	font-weight: bold
+}
+
+.page-content li {
+	list-style: disc;
+	margin-bottom: @spacer;
+}
+
+.page-content ol li {
+	list-style: decimal
+}
+
+.page-content blockquote {
+	padding: 0 30px;
+	clear: both;
+}
+
+@media (min-width: 768px) {
+	.page-content blockquote {
+		width: 50%;
+	}
+} /* end media query */
+
+.page-content blockquote p {
+	font-style: italic;
+}
+
+.page-content blockquote p:before,
+.page-content blockquote p:after {
+	font-style: normal;
+	position: relative;
+	top: 1px;
+	.opacity(.7);
+	font-weight: bold
+}
+
+.page-content blockquote p:first-child:before {
+	content: '\201C';
+	margin-left: -@spacer;
+	padding-right: 3px;
+}
+
+.page-content blockquote p:last-child:after {
+	content: '\201D';
+	padding-left: 3px
+}
+
+
+.page-content .alignleft {
+	margin-right: 40px;
+	display: block
+}
+
+.page-content .alignright {
+	margin-left: 40px;
+	display: block
+}
+
+.page-content .wp-caption {
+	width: auto !important
+}
+
+.page-content .wp-caption p {
+	font-size: 13px !important;
+	font-style: italic;
+	padding: 0 10px 0px;
+	text-align: center;
+}

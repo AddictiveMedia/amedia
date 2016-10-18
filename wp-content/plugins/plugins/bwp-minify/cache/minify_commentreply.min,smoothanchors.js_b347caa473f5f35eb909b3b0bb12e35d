@@ -1,0 +1,7 @@
+var addComment={moveForm:function(a,b,c,d){var e,f=this,g=f.I(a),h=f.I(c),i=f.I("cancel-comment-reply-link"),j=f.I("comment_parent"),k=f.I("comment_post_ID");if(g&&h&&i&&j){f.respondId=c,d=d||!1,f.I("wp-temp-form-div")||(e=document.createElement("div"),e.id="wp-temp-form-div",e.style.display="none",h.parentNode.insertBefore(e,h)),g.parentNode.insertBefore(h,g.nextSibling),k&&d&&(k.value=d),j.value=b,i.style.display="",i.onclick=function(){var a=addComment,b=a.I("wp-temp-form-div"),c=a.I(a.respondId);if(b&&c)return a.I("comment_parent").value="0",b.parentNode.insertBefore(c,b),b.parentNode.removeChild(b),this.style.display="none",this.onclick=null,!1};try{f.I("comment").focus()}catch(l){}return!1}},I:function(a){return document.getElementById(a)}};
+;(function($){function scrollToAnchor(anchor,href){anchor=$(anchor);if(anchor.length){var offset=anchor.offset().top;$('html, body').animate({scrollTop:offset},{duration:1000,complete:function(){if(href){window.location.hash=href;}}});}}
+$(function(){if(window.location.hash){var href=window.location.hash.replace('/^#/','');var anchor=$('a[name='+href+']');scrollToAnchor(anchor,false);}
+$('a').live('click',(function(){var href=$(this).attr('href');if(href&&href.match(/#[^'"\s]+/)){href=href.replace(/.*?#/,'');var anchor=$('a[name='+href+']');if(!anchor.length)
+anchor=$('a#'+href);if(!anchor.length)
+return true;scrollToAnchor(anchor,href);return false;}
+return true;}));});})(jQuery);

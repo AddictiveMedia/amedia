@@ -1,0 +1,104 @@
+{
+    "51": {
+        "post_title": "Team Members",
+        "post_name": "team-members",
+        "cfs_fields": [{
+            "id": "23",
+            "name": "team_section",
+            "label": "Section Title",
+            "type": "text",
+            "notes": "",
+            "parent_id": 0,
+            "weight": 0,
+            "options": {
+                "default_value": "",
+                "required": "0"
+            }
+        }, {
+            "id": "18",
+            "name": "team_loop",
+            "label": "Team Members",
+            "type": "loop",
+            "notes": "",
+            "parent_id": 0,
+            "weight": 1,
+            "options": {
+                "row_display": "0",
+                "row_label": "{team_name}",
+                "button_label": "Add a team member"
+            }
+        }, {
+            "id": "22",
+            "name": "team_img",
+            "label": "Image",
+            "type": "file",
+            "notes": "",
+            "parent_id": 18,
+            "weight": 2,
+            "options": {
+                "return_value": "url",
+                "required": "0"
+            }
+        }, {
+            "id": "19",
+            "name": "team_name",
+            "label": "Name",
+            "type": "text",
+            "notes": "",
+            "parent_id": 18,
+            "weight": 3,
+            "options": {
+                "default_value": "",
+                "required": "0"
+            }
+        }, {
+            "id": "20",
+            "name": "team_title",
+            "label": "Title",
+            "type": "text",
+            "notes": "",
+            "parent_id": 18,
+            "weight": 4,
+            "options": {
+                "default_value": "",
+                "required": "0"
+            }
+        }, {
+            "id": 34,
+            "name": "team_text",
+            "label": "Intro Text",
+            "type": "text",
+            "notes": "",
+            "parent_id": 18,
+            "weight": 5,
+            "options": {
+                "default_value": "",
+                "required": "0"
+            }
+        }, {
+            "id": "21",
+            "name": "team_text1",
+            "label": "Text",
+            "type": "textarea",
+            "notes": "",
+            "parent_id": 18,
+            "weight": 6,
+            "options": {
+                "default_value": "",
+                "formatting": "none",
+                "required": "0"
+            }
+        }],
+        "cfs_rules": {
+            "page_templates": {
+                "operator": "==",
+                "values": ["about.php"]
+            }
+        },
+        "cfs_extras": {
+            "order": "0",
+            "context": "normal",
+            "hide_editor": "0"
+        }
+    }
+}

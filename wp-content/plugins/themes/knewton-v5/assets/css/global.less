@@ -1,0 +1,392 @@
+/* =============================================================================
+	General
+   ========================================================================== */
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	font-weight: normal;
+	line-height: 24px;
+	font-size: 16px;
+	color: @text2;
+	.museo_sans(300);
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {text-decoration: none; color: @turq1;}
+
+a:hover {text-decoration: underline;}
+
+.black-links a {
+	color: @text2;
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid @white
+}
+
+.black-links a:hover {
+	color: @turq1;
+	border-color: @turq1
+}
+
+.inner {
+	padding: 0 25px;
+	margin: 0 auto;
+	.box-sizing()
+}
+
+.inner.no-mob-padding ,
+.inner.no-padding {
+	padding: 0
+}
+
+@media (min-width: 768px) {
+	.inner,
+	.inner.no-mob-padding {
+		max-width: 1170px;
+		padding: 0 40px
+	}
+
+	.inner.no-padding {
+		padding: 0
+	}
+}
+
+#content {
+	position: relative
+}
+
+.switch-spinner {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	top: 150px;
+	.opacity(0);
+	.transition(all, .2s, ease);
+	.transitionfix;
+	.border-radius(5px);
+	z-index: 10
+}
+
+.switch-spinner.spin {
+	.opacity(1);
+	top: 160px
+}
+
+.fade-wrap {
+	.transition(opacity)
+}
+
+.img-loading .fade-wrap {
+	.opacity(0, '!important');
+	.transition(none, 0s)
+}
+
+.js .fade-wrap {
+	.opacity(0, '!important');
+	.transition(opacity)
+}
+
+.js .fade-wrap.loaded {
+	.opacity(1, '!important');
+	.transition(none, 0s)
+}
+
+.js .img-wrap img {
+	.opacity(0);
+	.transitionfix
+}
+
+.js .img-wrap.loaded img {
+	.opacity(1);
+	.transition(opacity, .35s)
+}
+
+.focus-item-wrap .focus-item {
+	.transition(opacity, .2s)
+}
+
+.focus-item-wrap:hover .focus-item {
+	.opacity(.55)
+}
+
+.focus-item-wrap:hover .focus-item:hover {
+	.opacity(1)
+}
+
+.color-overlay:after {
+	content: '';
+	.abs-full();
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.4);
+	.transition(opacity, .2s);
+	.opacity(0)
+}
+
+.color-overlay:hover:after {
+	.opacity(1)
+}
+
+.js.not-ie.no-touch .cbp-so-section {
+	.opacity(.25)
+}
+
+.js.not-ie.no-touch .cbp-so-section.cbp-so-animate {
+	.transition(opacity, 1s, ease);
+	.opacity(1)
+}
+
+/* Bootstrap Collapse */
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+.ajax-fade {
+	.transition(opacity, .4s);
+	-webkit-backface-visibility: hidden
+}
+
+.loading-switch .ajax-fade,
+.loading-out .ajax-fade {.opacity(0)}
+
+
+/* =============================================================================
+	3-2-1 Grid Layout
+   ========================================================================== */
+
+.grid-3-2-1 img {
+	.img-responsive();
+	display: block;
+	margin: 0 auto;
+}
+
+.grid-3-2-1 .block-inner {
+	position: relative;
+}
+
+.grid-3-2-1-item {
+	padding: 12px 0;
+	.box-sizing;
+	text-align: center;
+}
+
+.grid-3-2-1 {
+	margin-top: -10px
+}
+
+.grid-3-2-1-item-inner {
+	margin: 0 10px;
+}
+
+.grid-3-2-1-item-img {
+	width: 100% !important;
+	height: auto !important;
+	display: block
+}
+
+@media (min-width: 590px) {
+	.grid-3-2-1 > .block {
+		float: left
+	}
+}
+
+@media (min-width: 590px) and (max-width: 768px) {
+	.grid-3-2-1 > .block {
+		width: 50%
+	}
+
+	.grid-3-2-1 > .block:nth-child(2n + 1) {
+		clear: both
+	}
+} /* end media query */
+
+@media (min-width: 769px) {
+	.grid-3-2-1 > .block {
+		width: 33.329%
+	}
+
+	.grid-3-2-1 > .block:nth-child(3n + 1) {
+		clear: both
+	}
+} /* end media query */
+
+@media (min-width: 1024px) {
+	.grid-3-2-1 {
+		width: 33.329%
+	}
+
+	.grid-3-2-1 > .block:nth-child(3n + 1) {
+		clear: both
+	}
+} /* end media query */
+
+
+/* =============================================================================
+	Grid 4-3-2
+   ========================================================================== */
+.grid-resource-item {
+	padding: 12px 0;
+	.box-sizing;
+	text-align: center;
+}
+
+.grid-4-3-2-1-item {
+	padding: 12px 0;
+	.box-sizing;
+	text-align: center;
+}
+
+.grid-5-4-3-2-1 {
+	margin-top: -10px
+}
+
+.grid-5-4-3-2-1-item {
+	padding: 12px 0;
+	.box-sizing;
+	text-align: center;
+}
+
+.grid-4-3-2-1 {
+	margin-top: -10px
+}
+
+.grid-5-4-3-2-1 {
+	margin-top: -10px
+}
+
+.grid-resource {
+	margin-top: -10px
+}
+
+.grid-4-3-2-1-item-inner {
+	margin: 0 10px;
+}
+
+.grid-5-4-3-2-1-item-inner {
+	margin: 0 10px;
+}
+
+.grid-resource-item-inner {
+	margin: 0 10px;
+}
+
+.grid-4-3-2-1-item-img {
+	width: 100% !important;
+	height: auto !important;
+	display: block
+}
+
+.grid-5-4-3-2-1-item-img {
+	width: 100% !important;
+	height: auto !important;
+	display: block
+}
+
+.grid-resource-item-img {
+	width: 100% !important;
+	height: auto !important;
+	display: block
+}
+
+
+@media (min-width: 550px) {
+	.grid-4-3-2-1-item {
+		width: 50%;
+		float: left;
+	}
+
+	.grid-5-4-3-2-1-item {
+		width: 50%;
+		float: left;
+	}
+
+	.grid-resource-item {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 768px) {
+	.grid-resource-item {
+		width: 50%;
+	}
+
+	.grid-5-4-2-1 {
+		.span2 {
+			.icon-third-img {
+				width:200px !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid-4-3-2-1-item {
+		width: 25%
+	}
+
+	.grid-5-4-3-2-1-item {
+		width: 20%
+	}
+
+	.grid-resource-item {
+		width: 33.33%
+	}
+}
+
+@media (min-width: 1100px) {
+
+	.grid-4-3-2-1-item {
+		width: 25%
+	}
+
+	.grid-5-4-3-2-1-item {
+		width: 20%
+	}
+}
+
+/* =============================================================================
+	4-2-1 Grid Layout (Use in combination with bootstrap .row-fluid > .span3
+   ========================================================================== */
+
+
+.grid-4-2-1 .span3 {
+	margin-bottom: 4%
+}
+
+@media (min-width: 480px) and (max-width: 1180px) {
+	.grid-4-2-1 .span3 {
+		width: 48%;
+		float: left;
+		margin-left: 4%
+	}
+
+	.grid-4-2-1 .span3:nth-child(odd) {
+		margin-left: 0
+	}
+} /* end media query */

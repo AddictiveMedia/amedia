@@ -1,0 +1,454 @@
+/* =============================================================================
+	Header
+   ========================================================================== */
+
+#header {
+	z-index: 5;
+	position: relative;
+}
+
+#header:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.header-inner {
+	padding: 0;
+	background: @white
+}
+
+@media (min-width: 980px) {
+	#header {
+		height: 137px
+	}
+
+	.header-wrap {
+		border-bottom: 1px solid #e2e2e2
+	}
+
+	#header:after {
+		margin-top: 52px
+	}
+
+	.header-inner {
+		padding: 0 40px
+	}
+} /* end media query */
+
+
+/* =============================================================================
+	Horizontal Nav Layout
+   ========================================================================== */
+
+#header {
+	padding-top: 18px
+}
+
+.header-logo {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 12px;
+	vertical-align: middle
+}
+
+.header-logo-link {
+	width: 150px;
+	height: 55px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+@media (min-width: 768px) {
+	#header {
+		padding-top: 24px
+	}
+
+	.header-logo-link {
+		width: 200px;
+		height: 48px;
+		display: block
+	}
+} /* end media query */
+
+@media (min-width: 800px) {
+	.header-logo {margin: 0}
+}
+
+.header-logo-img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%
+}
+
+.page-template-landing-php #header .logo a {cursor: default}
+
+#main-nav {
+	clear: both
+}
+
+#main-nav li a {
+	display: block;
+}
+
+#main-nav li.overview-link {
+	display: inline-block
+}
+/* use turquoise color for sign-in nav item */
+/* this only works if you manually set the CSS Class in the UI
+to nav-sign-in (Appearances > Menu)*/
+#header li.nav-sign-in a {
+    color: @turq1;
+}
+
+#header .cta-btn,
+#header .cta-btn-mob {
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+/* move hamburger icon level with cta button */
+.header-cta-wrap button {
+    position: relative;
+    top: 2px;
+}
+
+/* hide the full-width button on mobile & show the mobile button */
+#header .cta-btn {
+    display: none;
+}
+#header .cta-btn-mob {
+    display: inline-block
+}
+
+@media screen and (min-width: 768px) {
+    /* show full-width button on desktop and hide full-width button on mobile */
+    #header .cta-btn {
+        display: inline-block;;
+    }
+    #header .cta-btn-mob {
+        display: none;
+    }
+}
+
+.header-cta-wrap {
+	height: 55px;
+	line-height: 55px;
+	padding-left: 5%
+}
+
+@media (max-width: 480px) {
+	.header-cta {
+		background-color: transparent;
+		border-width: 0;
+		color: @turq1!important;
+		&:hover {
+			border-width: 0;
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.header-cta-wrap {
+		padding-left: 5%;
+	}
+} /* end media query */
+
+@media (min-width: 980px) {
+	#main-nav-wrap {
+		float: right;
+		clear: none
+	}
+
+	#main-nav li.overview-link {
+		display: none
+	}
+
+	#main-nav .menu-item,
+	.sub-menu .menu-item {
+		display: inline-block
+	}
+
+	#main-nav .menu-item a,
+	.sub-menu .menu-item a {
+		padding: 0 15px;
+	}
+
+} /* end media query */
+
+
+/* =============================================================================
+	Horizontal Nav Colors
+   ========================================================================== */
+
+#main-nav li a {
+	color: @gray1
+}
+
+.sub-menu-wrap a {
+	color: @gray2
+}
+
+#main-nav a:hover,
+#main-nav .hover > a,
+#main-nav .open > a,
+#main-nav .current-menu-ancestor > a,
+#main-nav .current_page_item > a,
+#main-nav .current-menu-item > a {
+	color: @text1;
+	text-decoration: none;
+}
+
+#main-nav .current_page_item > a {
+	cursor: default
+}
+
+@media (min-width: 980px) {
+	#main-nav .open .sub-menu a {
+		color: @gray2
+	}
+
+	#main-nav .open.hover a:hover {
+		color: @text1;
+		text-decoration: none;
+	}
+} /* end media query */
+
+/* =============================================================================
+	Horizontal Nav Layout Theme
+   ========================================================================== */
+
+#main-nav-wrap {
+	clear: both;
+}
+
+#main-nav > ul {
+	padding-bottom: 24px
+}
+
+#main-nav a {
+	padding: 0 20px
+}
+
+#main-nav > ul > li > a {
+	.museo_sans(700);
+	line-height: 36px
+}
+
+.sub-menu a {
+	.museo_sans(700);
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 24px !important;
+}
+
+.sub-menu-wrap {
+	padding: 6px 0 12px 40px;
+	.transitionfix
+}
+
+@media (min-width: 980px) {
+	#main-nav-wrap {
+		border: none;
+		clear: none;
+		padding: 0
+	}
+
+	#main-nav ul {padding: 0}
+
+	#main-nav,
+	#main-nav a {
+		padding: 0
+	}
+
+	/* Main level nav items */
+	#main-nav > ul > li > a {
+		display: block;
+		line-height: 60px;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 1px
+	}
+
+	.sub-menu-wrap {
+		padding: 1px 0 0;
+		width: 54px
+	}
+
+	.sub-menu-inner {
+		// height: 53px
+		height:31px;
+	}
+
+	.sub-menu-inner {
+		background: @white;
+		border-top: 1px solid #e2e2e2
+	}
+
+	.sub-menu-wrap a {
+		line-height: 52px;
+		height: 52px;
+		display: block
+	}
+
+} /* end media query */
+
+/* =============================================================================
+	Dropdown Structure
+   ========================================================================== */
+
+.sub-menu-wrap {
+	display: none
+}
+
+.menu-item-has-children > a:after {
+	content: '+';
+	color: @turq1;
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+}
+
+.menu-item-has-children.open > a:after {
+	content: '–';
+}
+
+@media (min-width: 980px) {
+	.menu-item-has-children > a:after {
+		display: none
+	}
+
+	.sub-menu-wrap {
+		width: 100%;
+		position: absolute;
+		// bottom: -53px;
+		bottom:-31px;
+		left: 0;
+		padding-top: 1px;
+		display: none;
+		z-index: 2;
+		white-space: nowrap;
+	}
+
+	#main-nav .current-menu-ancestor .sub-menu-wrap,
+	#main-nav .current-menu-item .sub-menu-wrap {
+		display: block;
+		z-index: 1
+	}
+
+	.sub-menu {
+		display: inline-block;
+		position: relative
+	}
+
+	// .hover .sub-menu-wrap {
+	// 	z-index: 3
+	// }
+
+	.menu-item-has-children a {
+		position: relative
+	}
+
+	// #main-nav:hover .current-menu-ancestor > a:after,
+	// #main-nav:hover .menu-item-has-children.current-menu-item > a:after {
+	// 	.opacity(.25)
+	// }
+
+	// .menu-item-has-children:hover > a:after,
+	// .current-menu-ancestor > a:after,
+	// .menu-item-has-children.current-menu-item > a:after,
+	// #main-nav:hover .current-menu-ancestor:hover > a:after,
+	// #main-nav:hover .menu-item-has-children.current-menu-item:hover > a:after {
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	left: 50%;
+	// 	margin-left: -.5px;
+	// 	height: 10px;
+	// 	border-left: 1px solid @border1;
+	// 	.opacity(1)
+	// }
+} /* end media query */
+
+/* =============================================================================
+	Nav Collapse Layout
+   ========================================================================== */
+
+.nav-toggle {
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	position: relative;
+	margin-right: 20px;
+	z-index: 5;
+	border-color: @turq1;
+	background: @turq1
+}
+
+.nav-toggle:after {
+	font-size: 16px;
+	font-family: 'FontAwesome';
+	content: "\f0c9";
+	color: @white
+}
+
+.nav-toggle.collapsed {
+	background: @white;
+	border-color: @turqborder
+}
+
+.nav-toggle:hover {
+	background: @turq1;
+	border-color: @turq1
+}
+
+.nav-toggle.collapsed:after {
+	color: @turq1
+}
+
+.nav-toggle:hover:after {
+	color: @white
+}
+
+@media (min-width: 480px) {
+	.nav-toggle {
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 980px) {
+	.nav-toggle {
+		display: none
+	}
+
+	.nav-collapse {
+		height: auto !important;
+		display: block !important;
+		.transition(none, 0s)
+	}
+
+	.nav-collapse ul {
+		padding-bottom: 0
+	}
+} /* end media query */
+
+#main-nav-wrap {
+	ul {
+		list-style-type:none;
+		margin:0;
+	}
+}
+.sub-menu li a {
+	position: relative;
+	top:15px;
+}
+@media (min-width: 980px) {
+	#switcheroo {
+		margin-top:16px;
+	}
+}

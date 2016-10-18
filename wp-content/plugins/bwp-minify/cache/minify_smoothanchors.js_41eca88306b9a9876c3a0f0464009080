@@ -1,0 +1,6 @@
+(function($){function scrollToAnchor(anchor,href){anchor=$(anchor);if(anchor.length){var offset=anchor.offset().top;$('html, body').animate({scrollTop:offset},{duration:1000,complete:function(){if(href){window.location.hash=href;}}});}}
+$(function(){if(window.location.hash){var href=window.location.hash.replace('/^#/','');var anchor=$('a[name='+href+']');scrollToAnchor(anchor,false);}
+$('a').live('click',(function(){var href=$(this).attr('href');if(href&&href.match(/#[^'"\s]+/)){href=href.replace(/.*?#/,'');var anchor=$('a[name='+href+']');if(!anchor.length)
+anchor=$('a#'+href);if(!anchor.length)
+return true;scrollToAnchor(anchor,href);return false;}
+return true;}));});})(jQuery);
